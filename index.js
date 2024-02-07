@@ -9,7 +9,11 @@ navToggle.addEventListener("click", () => {
     // Check Visibility of Button
     if (visibility == "false") {
         nav.setAttribute("data-visible", true);
+        navToggle.setAttribute("aria-expanded", true);
     }
 
-    else nav.setAttribute("data-visible", false);
+    else {
+        nav.setAttribute("data-visible", false);
+        navToggle.setAttribute("aria-expanded", false);
+    }
 });
