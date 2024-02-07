@@ -292,6 +292,13 @@ select {
     backdrop-filter: blur(1.5rem);
 }
 
+/* Browser Support */
+@supports (backdrop-filter: blur(1rem)) {
+    .primary-navigation {
+        background-color: hsl( var(--clr-white) / 0.05);
+        backdrop-filter: blur(1.5rem);
+    }
+}
 
 @media (max-width: 35em) {    
     .primary-navigation {
