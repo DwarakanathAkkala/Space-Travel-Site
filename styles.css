@@ -490,9 +490,10 @@ body {
     }
 }
 
-/* Destination */
+/* Crew */
 .crew {
     background-image: url(./assets/crew/background-crew-mobile.jpg);
+    background-repeat: no-repeat;
 }
 
 @media (min-width: 35em) {
@@ -542,6 +543,7 @@ body {
 .grid-container--destination > picture {
     grid-area: image;
     max-width: 60%;
+    align-self: start;
 }
 
 .grid-container--destination > .tab-list {
@@ -645,8 +647,7 @@ body {
             '. image content .';
     }
 
-    .grid-container--destination > picture,
-    .grid-container--crew > picture {
+    .grid-container--destination > picture {
         max-width: 90%;
     }
 
@@ -656,17 +657,16 @@ body {
     }
 
     .grid-container--crew {
+        justify-items: start;
+        grid-template-columns: minmax(1rem, 1fr) minmax(0, 37rem) minmax(0, 23rem) minmax(1rem, 1fr);
         grid-template-areas: 
             '. title title .'
             '. content image .'
             '. tabs image .';
     }
 
-    .grid-container--crew > .dot-indicators {
-        justify-self: start;
+    .grid-container--crew > picture {
+        grid-column: span 2;
     }
 
-    .grid-container--crew > picture {
-        align-self: end;
-    } 
 }
