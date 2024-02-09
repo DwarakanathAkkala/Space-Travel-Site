@@ -509,6 +509,27 @@ body {
     }
 }
 
+/* Technology */
+.technology {
+    background-image: url(./assets/technology/background-technology-mobile.jpg);
+    /* background-repeat: no-repeat; */
+    /* background-position: cover; */
+}
+
+@media (min-width: 35em) {
+    .technology {
+        background-position: center center;
+        background-image: url(./assets/technology/background-technology-tablet.jpg);
+    }
+}
+
+@media (min-width: 45em) {
+    .technology {
+        background-image: url(./assets/technology/background-technology-desktop.jpg);
+    }
+}
+
+
 /* ------------------------ */
 /* Layout */
 /* ------------------------ */
