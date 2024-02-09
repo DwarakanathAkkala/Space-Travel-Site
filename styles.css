@@ -616,6 +616,55 @@ body {
     opacity: 0.5;
 }
 
+
+/* Technology Layout */
+
+.grid-container--technology {
+    --flow-space: 2rem;
+    grid-template-areas: 
+        'title'
+        'image'
+        'tabs'
+        'content';
+}
+
+.grid-container--technology {
+    padding-inline: 0;
+}
+
+.grid-container--technology > article  {
+    margin-inline: 1rem;
+}
+
+.grid-container--technology > picture {
+    grid-area: image;
+}
+
+
+.grid-container--technology > .dot-indicators > * {
+    display: grid;
+    align-content: center;
+    padding: 1.5em;
+}
+
+.dot-indicators > *:hover,
+.dot-indicators > *:focus {
+    background-color: hsl( var(--clr-white) / 0.5);
+}
+
+.dot-indicators > [aria-selected="true"] {
+    background-color: hsl( var(--clr-white) / 1);
+}
+
+.grid-container--technology > .technology-details {
+    grid-area: content;
+}
+
+.grid-container--technology > .technology-details > p {
+    margin-top: 1.5rem;
+}
+
+
 @media (min-width: 35em) {
 
     .numbered-title {
