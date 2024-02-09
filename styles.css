@@ -102,6 +102,10 @@ picture {
     display: block;
 }
 
+picture [hidden] {
+    display: none;
+}
+
 /* Form Elements */
 input,
 button,
