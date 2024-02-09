@@ -647,15 +647,6 @@ body {
     padding: 1.5em;
 }
 
-.dot-indicators > *:hover,
-.dot-indicators > *:focus {
-    background-color: hsl( var(--clr-white) / 0.5);
-}
-
-.dot-indicators > [aria-selected="true"] {
-    background-color: hsl( var(--clr-white) / 1);
-}
-
 .grid-container--technology > .technology-details {
     grid-area: content;
 }
