@@ -687,6 +687,10 @@ body {
 
 @media (min-width: 45em) {
 
+    .numbered-title {
+        font-size: var(--fs-600);
+    }
+
     .explore-button {
         justify-self: end;
     }
@@ -747,6 +751,8 @@ body {
 
     .grid-container--crew > picture {
         grid-column: span 2;
+        max-width: 75%;
+        align-self: end;
     }   
 
     .grid-container--technology {
