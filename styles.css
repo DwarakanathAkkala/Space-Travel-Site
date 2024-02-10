@@ -241,6 +241,9 @@ select {
     color: hsl( var(--clr-white) / 0.25);
 }
 
+.home a {
+    text-decoration: none;
+}
 
 /* ------------------------ */
 /* Components */
@@ -398,8 +401,6 @@ select {
     .primary-navigation {
         margin-block: 2rem;   
     }
-
-
 
 }
 
