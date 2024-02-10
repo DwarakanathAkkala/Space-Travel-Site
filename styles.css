@@ -696,6 +696,14 @@ body {
         padding-bottom: max(6rem, 20vh);
         align-items: end;
     }
+
+    .grid-container--technology > .dot-indicators {
+        margin-top: 0;
+    }
+
+    .grid-container--technology > .dot-indicators > * {
+        padding: 1em;
+    }
     
     .grid-container--home > *:first-child {
         grid-column: 2;
