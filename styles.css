@@ -686,6 +686,11 @@ body {
 }
 
 @media (min-width: 45em) {
+
+    .explore-button {
+        justify-self: end;
+    }
+    
     .grid-container {
         text-align: left;
         column-gap: var(--container-gap, 2rem);
