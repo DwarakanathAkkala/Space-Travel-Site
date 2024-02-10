@@ -512,8 +512,6 @@ body {
 /* Technology */
 .technology {
     background-image: url(./assets/technology/background-technology-mobile.jpg);
-    /* background-repeat: no-repeat; */
-    /* background-position: cover; */
 }
 
 @media (min-width: 35em) {
@@ -640,11 +638,10 @@ body {
     grid-area: image;
 }
 
-
 .grid-container--technology > .dot-indicators > * {
     display: grid;
     align-content: center;
-    padding: 1.5em;
+    padding: 1.25em;
 }
 
 .grid-container--technology > .technology-details {
@@ -675,6 +672,14 @@ body {
             'content'
             'tabs'
             'image';
+    }
+
+    .grid-container--technology > picture {
+        align-self: flex-end;
+    }
+
+    .grid-container--technology {
+        padding-inline: 2rem;
     }
 
 }
@@ -728,6 +733,37 @@ body {
 
     .grid-container--crew > picture {
         grid-column: span 2;
+    }   
+
+    .grid-container--technology {
+        justify-items: start;
+        grid-template-columns: minmax(1rem, 0.5fr) minmax(1rem, 1fr) minmax(1rem, 1fr) minmax(0, 30rem);
+        grid-template-areas: 
+            'title title title title'
+            'tabs content content image';
+    }
+
+    .grid-container--technology > .dot-indicators {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-container--technology > picture {
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid-container--technology {
+        padding-inline: 0;
+        padding-left: 10rem;
+    }
+
+    .grid-container--technology > img {
+        object-fit: cover;
+    }
+
+    .grid-container--technology > article {
+        margin: 0;
     }
 
 }

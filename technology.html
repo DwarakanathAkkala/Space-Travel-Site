@@ -26,6 +26,7 @@
   <a class="skip-to-content" href="#main">Skip to Main Content</a>
 
   <header class="primary-header flex">
+    
     <!-- Logo -->
     <div>
       <img src="./assets/shared/logo.svg" alt="Space Tourism Logo" class="logo">
@@ -107,17 +108,20 @@
     </article>
     
     <picture id="launch-image">
-      <source srcset="assets/technology/image-launch-vehicle-landscape.jpg" type="image/jpg">
+      <source srcset="assets/technology/image-launch-vehicle-landscape.jpg" media="(max-width: 719px)" type="image/jpg">
+      <source srcset="assets/technology/image-launch-vehicle-portrait.jpg" media="(min-width: 721px)" type="image/jpg">
       <img src="assets/technology/image-launch-vehicle-landscape.jpg" alt="Rocket Launch Image">
-    </picture>
+    </picture>  
 
     <picture id="spaceport-image" style="display: none;">
-      <source srcset="assets/technology/image-spaceport-landscape.jpg" type="image/jpg">
+      <source srcset="assets/technology/image-spaceport-landscape.jpg" media="(max-width: 719px)" type="image/jpg">
+      <source srcset="assets/technology/image-spaceport-portrait.jpg" media="(min-width: 721px)" type="image/jpg">
       <img src="assets/technology/image-spaceport-landscape.jpg" alt="Spaceport Image">
     </picture>
 
     <picture id="capsule-image" style="display: none;">
-      <source srcset="assets/technology/image-space-capsule-landscape.jpg" type="image/jpg">
+      <source srcset="assets/technology/image-space-capsule-landscape.jpg" media="(max-width: 719px)" type="image/jpg">
+      <source srcset="assets/technology/image-space-capsule-portrait.jpg" media="(min-width: 721px)" type="image/jpg">
       <img src="assets/technology/image-space-capsule-landscape.jpg" alt="Space Capsule Image">
     </picture>
 
