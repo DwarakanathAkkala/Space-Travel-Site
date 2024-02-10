@@ -68,6 +68,7 @@ Users should be able to:
 
 ```html
 <!-- Updating the images based on viewport size of the device -->
+
 <picture id="launch-image">
   <source
     srcset="assets/technology/image-launch-vehicle-landscape.jpg"
@@ -105,9 +106,7 @@ proud-of-this-css {
     "image";
 
   /* Desktop Layout */
-  grid-template-columns:
-    minmax(1rem, 0.5fr) minmax(1rem, 1fr) minmax(1rem, 1fr)
-    minmax(0, 30rem);
+  grid-template-columns: minmax(1rem, 0.5fr) minmax(1rem, 1fr) minmax(1rem, 1fr) minmax(0, 30rem);
   grid-template-areas:
     "title title title title"
     "tabs content content image";
