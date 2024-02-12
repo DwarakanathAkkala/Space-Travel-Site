@@ -19,7 +19,6 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
