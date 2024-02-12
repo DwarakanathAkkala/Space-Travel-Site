@@ -245,6 +245,7 @@ select {
     text-decoration: none;
 }
 
+
 /* ------------------------ */
 /* Components */
 /* ------------------------ */
@@ -390,7 +391,7 @@ select {
         height: 1px;
         width: 100%;
         margin-right: -2.5rem;
-        background: hsl( var(--clr-white) / 0.25);
+        background: rgba(255, 255, 255, 0.25);
         order: 1;
     }
 
@@ -564,6 +565,10 @@ body {
     grid-area: image;
     max-width: 60%;
     align-self: start;
+}
+
+.destination img {
+    border-radius: 50%;
 }
 
 .grid-container--destination > .tab-list {
@@ -786,4 +791,9 @@ body {
         margin: 0;
     }
 
+}
+
+
+.explore-link {
+    background-color: #FFF;
 }
