@@ -105,7 +105,10 @@ proud-of-this-css {
     "image";
 
   /* Desktop Layout */
-  grid-template-columns: minmax(1rem, 0.5fr) minmax(1rem, 1fr) minmax(1rem, 1fr) minmax(0, 30rem);
+  grid-template-columns: minmax(1rem, 0.5fr) minmax(1rem, 1fr) minmax(
+      1rem,
+      1fr
+    ) minmax(0, 30rem);
   grid-template-areas:
     "title title title title"
     "tabs content content image";
